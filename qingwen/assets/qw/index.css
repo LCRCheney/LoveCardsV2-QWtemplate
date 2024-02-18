@@ -1,0 +1,144 @@
+/* allcard.css */
+
+.allcard {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.allcard__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.allcard__subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.allcard__content {
+    font-size: 16px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 10%;
+}
+
+.allcard__actions {
+    display: flex;
+    justify-content: space-between;
+}
+.allcard__liulan{
+    float: right;
+    font-weight: bold;
+}
+.css-allcard-actions-good-1,
+.css-allcard-actions-good-0,
+.css-allcard-actions-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.css-allcard-actions-good-0 {
+    background-color: #ffffff;
+    color: #ff98bb;
+}
+.css-allcard-actions-good-1 {
+    background-color: #ffffff;
+    color: #ff4081;
+}
+
+.css-allcard-actions-comment {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.allcard__share-icon {
+    font-size: 20px;
+    color: #1e1e20;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* 添加FontAwesome分享图标的样式 */
+/*@font-face {*/
+/*    font-family: 'FontAwesome';*/
+/*    src: url('path/to/fa-solid-900.woff2') format('woff2');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+
+.allcard__share-icon:before {
+    font-family: 'FontAwesome';
+    content: '\f1e0'; /* Unicode表示分享图标 */
+}
+
+.allcard__image-container {
+    margin-top: 15px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.allcard__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .allcard {
+        margin: 10px;
+    }
+}
+.button-body{
+/*  居中  */
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.up-button {
+    background-color: transparent;
+    border: 1px solid #ccc; /* 添加边框 */
+    border-radius: 4px; /* 添加圆角效果 */
+    padding: 5px 10px; /* 添加内边距以适应边框和图标 */
+    outline: none;
+    cursor: pointer;
+    height: 35px; /* 需要设置一个高度以匹配bigtitle的大概高度 */
+    width: 100px;
+}
+
+.up-button:hover {
+    background-color: #f0f0f0; /* 可选：鼠标悬停时的背景色 */
+    border-color: #999; /* 可选：鼠标悬停时的边框颜色 */
+}
+.down-button {
+    background-color: transparent;
+    border: 1px solid #ccc; /* 添加边框 */
+    border-radius: 4px; /* 添加圆角效果 */
+    padding: 5px 10px; /* 添加内边距以适应边框和图标 */
+    outline: none;
+    cursor: pointer;
+    height: 35px; /* 需要设置一个高度以匹配bigtitle的大概高度 */
+    width: 100px;
+}
+
+.down-button:hover {
+    background-color: #f0f0f0; /* 可选：鼠标悬停时的背景色 */
+    border-color: #999; /* 可选：鼠标悬停时的边框颜色 */
+}

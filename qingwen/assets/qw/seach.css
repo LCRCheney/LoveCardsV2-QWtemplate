@@ -1,0 +1,84 @@
+/* 搜索主体容器 */
+.seach-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 隐藏原始的radio按钮 */
+.search-body-choose-label input {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+/* 创建一个自定义的圆形来替代radio按钮 */
+.search-body-choose-label .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* 当鼠标悬停在自定义radio按钮上时的样式 */
+.search-body-choose-label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* 当radio按钮被选中时的样式 */
+.search-body-choose-label input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* 创建在checkmark内部的小圆点，表示选中状态 */
+.search-body-choose-label .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* 当radio按钮被选中时显示小圆点 */
+.search-body-choose-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.search-body-choose-label .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.seach-btn{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    margin: 0 auto;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.seach-body-choose{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.seach-body-choose-label{
+  margin-left: 5px;
+}
+
+

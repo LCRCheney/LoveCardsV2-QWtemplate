@@ -1,0 +1,224 @@
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* 自定义顶部区域的内边距 */
+}
+
+.card-top-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(100% - 50px); /* 确保内容区域能够适应宽度，减去返回按钮的大致宽度和间隙 */
+}
+
+.card-top-info-bigtitle {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card-top-info-timeid {
+  font-size: 14px;
+  color: #999;
+  text-align: left;
+}
+
+.card-top-back {
+  position: relative;
+  margin-top: -30px;
+
+}
+
+.card-top-back-btn {
+  background-color: #FFD700;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: 1px solid #ccc; /* 添加边框 */
+  border-radius: 4px; /* 添加圆角效果 */
+  padding: 5px 10px; /* 添加内边距以适应边框和图标 */
+  outline: none;
+  cursor: pointer;
+  height: 35px; /* 需要设置一个高度以匹配bigtitle的大概高度 */
+  width: 60px;
+}
+
+.card-top-back-btn:hover {
+  background-color: #f0f0f0; /* 可选：鼠标悬停时的背景色 */
+  border-color: #999; /* 可选：鼠标悬停时的边框颜色 */
+}
+
+.allcard__actions {
+  display: flex;
+  justify-content: space-between;
+}
+.allcard__liulan{
+  float: right;
+  font-weight: bold;
+}
+.css-allcard-actions-good-1,
+.css-allcard-actions-good-0,
+.css-allcard-actions-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.css-allcard-actions-good-0 {
+  background-color: #ffffff;
+  color: #ff98bb;
+}
+.css-allcard-actions-good-1 {
+  background-color: #ffffff;
+  color: #ff4081;
+}
+.card-body {
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(216,216,216);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card-body-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-body-content{
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: justify;
+  line-height: 1.5;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: normal;
+  text-indent: 2em;
+  text-justify: inter-ideograph;
+  margin-top: 15px;
+  height: 10%;
+}
+
+.card-body-love{
+  font-size: 18px;
+  margin-bottom: 15px;
+  height: 70px;
+}
+
+
+.card-body-love-taName{
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+
+.card-body-love-woName{
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-body-love-heart{
+  height: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card__form-input,
+.card__form-textarea,
+.card__form-select,
+.card__form-button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card__form-input,
+.card__form-textarea,
+.card__form-select {
+  background-color: #F7F7F7;
+}
+
+.card__form-input:focus,
+.card__form-textarea:focus,
+.card__form-select:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #ADD8E6;
+}
+
+.card__form-button {
+  background-color: #FFD700;
+  color: #FFFFFF;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.card__form-button:hover {
+  background-color: #EEC900;
+}
+
+.up{
+  margin-top: -5px;
+}
+.index{
+  z-index: -1;
+}
+.card-body-fg{
+/*分割线*/
+  border-bottom: 1px solid #ccc;
+/* 取消li的点 */
+  list-style: none;
+}
+li{
+  list-style: none;
+}
+.card-body-msgbody-content-title{
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: 15px;
+  height: 10%;
+  font-weight: bold;
+
+}
+.card-body-msgbody-content-text{
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: 15px;
+  height: 10%;
+  line-height: 1.5;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cnt{
+  margin-left: 10px;
+  font-size: 16px;
+}
+.time{
+  font-size: 14px;
+  color: #999;
+}
