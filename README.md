@@ -9,9 +9,9 @@
 
 <p align="center">
   <a href="https://github.com/zhiguai/LoveCards/releases">
-    <img src="https://img.shields.io/github/v/release/zhiguai/LoveCards?include_prereleases&style=flat-square" />
+    <img src="https://img.shields.io/github/v/release/LCRCheney/LoveCardsV2-QWtemplate?include_prereleases&style=flat-square" />
   </a>
-  <img src="https://img.shields.io/github/stars/zhiguai/LoveCards?style=social">
+  <img src="https://img.shields.io/github/stars/LCRCheney/LoveCardsV2-QWtemplate?style=social">
 </p>
 
 <p align="center">
@@ -82,7 +82,7 @@
 ## ⭐ Star History
 
 <a href="https://github.com/LCRCheney/LoveCardsV2-QWtemplate/stargazers">
-    <img width="500" alt="Star History Chart" src="https://api.star-history.com/svg?repos=zhiguai/LoveCards&type=Date">
+    <img width="500" alt="Star History Chart" src="https://api.star-history.com/svg?repos=LCRCheney/LoveCardsV2-QWtemplate&type=Date">
 </a> 
 
 ## 📜 License
