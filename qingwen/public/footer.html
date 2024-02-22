@@ -46,6 +46,10 @@
 {if $ThemeConfig['YH']}
 <script src="https://player.xfyun.club/js/yinghua.js"></script>
 {/if}
+{if $ThemeConfig['DL']}
+<script src="http://api.xmcyh.cn/web/newyear.js"></script>
+{/if}
+
 {if $ThemeConfig['ThemeLinkCDN']}
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/js/mdui.min.js"></script>
@@ -55,9 +59,6 @@
 <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.5.0/axios.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-{if $ThemeConfig['DL']}
-<script src="http://api.xmcyh.cn/web/newyear.js"></script>
-{/if}
 {else /}
 <script src="{__A-assets__}/lib/jquery-3.6.0/jquery.min.js"></script>
 <script src="{__A-assets__}/lib/mdui-v1.0.2/js/mdui.min.js"></script>
@@ -67,9 +68,6 @@
 <script src="{__A-assets__}/lib/clipboard-2.0.6/clipboard.min.js"></script>
 <script src="{__A-assets__}/lib/axios-1.5.0/axios.min.js"></script>
 <script src="{$ThemeAssetsUrlPath}/masonry-4.2.2/masonry.pkgd.min.js"></script>
-{if $ThemeConfig['DL']}
-<script src="{$ThemeAssetsUrlPath}/qw/newyear.js"></script>
-{/if}
 {/if}
 
 <!-- 全局弹窗 -->
@@ -123,7 +121,7 @@
         //内置类绑定点赞方法
         CommonEntity.CBindCardsGood("js-Btn-Update-CardsGood", (data) => {
             return (
-                '<button class="css-card-actions-good-1 mdui-btn mdui-float-right"><i class="fas fa-heart"></i>点赞'+data+ "</button>"
+                '<button class="css-card-actions-good-1 mdui-btn mdui-float-right"><i class="fas fa-heart"></i>点赞'+data+"</button>"
             );
         });
     });
